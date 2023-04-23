@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/water_tracker"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="top" />
+
+    <ImageView
+        android:id="@+id/water_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/water_full"
+        android:contentDescription="@string/image_of_water" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/water_left_to_drink"
+        android:textSize="40sp"
+        android:layout_below="@id/water_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp" />
+
+    <TextView
+        android:id="@+id/water_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="@string/_0_ml"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/subtract_amount_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/enter_mls_to_subtract"
+        android:layout_below="@id/water_amount_text_view"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="subtract-amount" />
+
+    <Button
+        android:id="@+id/subtract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtract"
+        android:layout_below="@id/subtract_amount_edit_text"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+</RelativeLayout>
