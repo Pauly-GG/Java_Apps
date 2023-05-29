@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">StopWatch_Api24</string>
-    <string name="start">START</string>
-    <string name="settings">SETTINGS</string>
-    <string name="_00_00_00">00:00:00</string>
-</resources>
